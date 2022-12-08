@@ -1,0 +1,56 @@
+span {
+    display: none;
+}
+
+.print {
+    position: fixed;
+    right: 1rem;
+    bottom: 1rem;
+    z-index: 10;
+    height: 2rem;
+}
+
+@media print {
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    h2 {
+        margin: 0;
+        padding: 0;
+    }
+
+    span {
+        display: block;
+        position: absolute;
+        right: 1rem;
+        top: 0;
+    }
+
+    .print {
+        display: none;
+    }
+
+    .MuiDataGrid-row {
+        min-height: 25px !important;
+        max-height: 25px !important;
+        
+    }
+    
+    .MuiDataGrid-cell {
+        min-height: 25px !important;
+        max-height: 25px !important;
+    }
+
+    #boxToPrint {
+        height: 910px;
+        margin: 0;
+        padding: 0;
+    }
+
+    .MuiDataGrid-footerContainer {
+        display: none !important;
+    }
+}

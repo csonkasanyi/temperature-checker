@@ -1,0 +1,13 @@
+#teszt {
+    width: 320px;
+    margin: auto;
+}
+
+th {
+    vertical-align: middle;
+}
+
+#teszt input {
+    width: 100px;
+    text-align: center;
+}
